@@ -1,0 +1,282 @@
+1.can you tell me real time usages of trigers?
+
+A trigger is a block of code that is executed automatically from a database statement. 
+Triggers is generally executed for DML statements such as INSERT, UPDATE or DELETE. 
+It is used to mention the execution time of the trigger.
+It specifies whether the trigger should fire after or before the DML statement.
+2.why wrapper classes in java and their useges real time?
+A Wrapper class is a class whose object wraps or contains primitive data types. 
+When we create an object to a wrapper class, it contains a field and in this field, 
+we can store primitive data types. In other words, we can wrap
+ a primitive value into a wrapper class object.
+
+3.difference between String buffer and String builder?
+StringBuffer	
+1)	StringBuffer is synchronized i.e. thread safe. 
+It means two threads can't call the 
+methods of StringBuffer simultaneously.
+2)StringBuilder is non-synchronized i.e. not thread safe. 
+It means two threads can call the methods of StringBuilder simultaneously.
+4)difference between list and set in collection framework in java
+List	
+1. The List is an ordered sequence.	
+2. List allows duplicate elements
+Set
+1. The Set is an unordered sequence.
+Set doesn't allow duplicate elements.
+
+5)Checked and unchecked exceptions in java with examples
+Checked exceptions are checked at compile-time. 
+It means if a method is throwing a checked exception then it should handle the exception
+ using try-catch block or it should declare the exception using throws keyword, otherwise the
+ program will give a compilation error.
+class Example {  
+   public static void main(String args[]) 
+   {
+	FileInputStream fis = null;
+	/*This constructor FileInputStream(File filename)
+	 * throws FileNotFoundException which is a checked
+	 * exception
+         */
+        fis = new FileInputStream("B:/myfile.txt"); 
+	int k; 
+
+	/* Method read() of FileInputStream class also throws 
+	 * a checked exception: IOException
+         */
+	while(( k = fis.read() ) != -1) 
+	{ 
+		System.out.print((char)k); 
+	} 
+
+	/*The method close() closes the file input stream
+	 * It throws IOException*/
+	fis.close(); 	
+   }
+}
+
+Unchecked exceptions are not checked at compile time. It means if your program is 
+throwing an unchecked exception and even if you didn’t handle/declare that exception, 
+the program won’t give a compilation error. Most of the times these exception occurs due to
+ the bad data provided by user during the user-program interaction. It is up to the programmer to
+ judge the conditions in advance, that can cause such exceptions and handle them appropriately.
+ All Unchecked exceptions are direct sub classes of RuntimeException class.
+
+class Example {  
+   public static void main(String args[])
+   {
+	int num1=10;
+	int num2=0;
+	/*Since I'm dividing an integer with 0
+	 * it should throw ArithmeticException
+         */
+	int res=num1/num2;
+	System.out.println(res);
+   }
+}
+
+
+difference between prepared statement and callablestatement in terms of security
+
+1) Statement  –  Used to execute normal SQL queries.
+
+2) PreparedStatement  –  Used to execute dynamic or parameterized SQL queries.
+
+3) CallableStatement  –  Used to execute the stored procedures.
+
+difference between jquery and javascript
+Pure JavaScript can be faster for DOM selection/manipulation than 
+jQuery as JavaScript is directly processed by the browser. 
+jQuery has to be converted into JavaScript to make it run in a browser. 
+All these can be done in JavaScript but we may have to write many lines of code
+
+difference between let anad var in js
+var		
+Variables declared with var are in the function scope.	
+let
+Variables declared as let are in the block scope
+
+diffrence between id selector and class selector example
+Class	                                                   Id
+We can attach multiple class selectors to an element.	We can attach only one ID selector to an element.
+Syntax: .class{ // declarations of CSS }	Syntax: #id{ // declarations of CSS }
+
+
+difference between procedure and fuction
+Function	
+	It calculates the result based on given inputs.	
+	It can be called in a query.	
+	It does not support try-catch blocks.	
+
+
+Procedure
+It performs certain tasks in order.
+It cannot be called in a query.
+It supports try-catch blocks.
+
+what is usege of generisc java'
+Java Generics is a set of related methods or a set of similar types. 
+Generics allow types Integer, String, or even user-defined types to be passed as 
+a parameter to classes, methods, or interfaces. Generics are mostly used by classes like HashSet or HashMap.
+java-7
+
+try-with resource
+String in switch Statements
+java 8
+Lambda expressions,
+Method references,
+Functional interfaces,
+Stream API,
+Default methods,
+Base64 Encode Decode,
+Static methods in interface,
+Optional class,
+Collectors class,
+ForEach() method,
+Parallel array sorting,
+Nashorn JavaScript Engine,
+Parallel Array Sorting,
+Type and Repating Annotations,
+IO Enhancements,
+Concurrency Enhancements,
+JDBC Enhancements etc.
+
+10.need of statement management
+tate management is very important in application development. 
+It centralizes all the states of various UI controls to handle data flow across the application.
+ For example, consider you want to show a “welcome” message on the user's first-time visit but not
+ on subsequent page visits, you need the state of the user
+
+11.what is ioc container
+An IoC container is a common characteristic of frameworks that implement IoC. 
+In the Spring framework, the interface ApplicationContext represents the IoC container. 
+The Spring container is responsible for instantiating, configuring and assembling objects known as beans, 
+as well as managing their life cycles.
+
+
+12. Jsp and Jstl tags?
+The JavaServer Pages Standard Tag Library (JSTL) is a collection of useful JSP tags which 
+encapsulates the core functionality common to many JSP applications. JSTL has support for common, 
+structural tasks such as iteration and conditionals, tags for manipulating XML documents,
+ internationalization tags, and SQL tags.
+
+13.mvc representational?
+Model–view–controller (usually known as MVC) is a software design pattern 
+commonly used for developing user interfaces that divide the related program logic
+ into three interconnected elements.
+
+14.Module quolible in mvc
+
+
+Html 5 and html 6
+ntegration with Camera: Table of Contents. ...
+Control Over Video Objects: ...
+Guaranteed Libraries: ...
+Flexible Image Sizing: ...
+Pluggable Pre-Preprocessors and Pluggable Languages: ...
+Organized Annotation: ...
+Power Micro-Formats: ...
+Auto Access to Contact Information:
+
+some of the selectors in css
+CSS Selectors
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+
+can we use jsp as controller
+StudentServlet class will act as a Controller, and for the presentation layer, we'll create student-record. jsp page. 
+This servlet is the controller of our web application. ... 
+Finally, the Controller forwards the request and response objects to a JSP, the view of the application.
+
+why spring is so popular advantages
+Spring is one of the most popular open source framework for developing enterprise applications. It provides comprehensive infrastructure support 
+for developing Java based applications. Spring also enables the developer to create high 
+performing, reusable, easily testable and loose coupling enterprise Java application.
+
+
+what is ioc in sping
+Spring IoC is the mechanism to achieve loose-coupling between Objects dependencies.
+ To achieve loose coupling and dynamic binding of the
+ objects at runtime, objects dependencies are injected by other assembler objects. ...
+ Spring IoC container provides us different ways to decouple the object dependencies
+
+what is standalone spring application
+Spring ApplicationContext is a central interface to provide configuration for an application. .
+.. ClassPathXmlApplicationContext is an implementation of the ApplicationContext that loads 
+
+configuration definition from an XML file, which is located on the classpath.
+
+what is scope and spring bean
+singleton
+
+This scopes the bean definition to a single instance per Spring IoC container (default).
+
+2	
+prototype
+
+This scopes a single bean definition to have any number of object instances.
+
+3	
+request
+
+This scopes a bean definition to an HTTP request. Only valid in the context of a web-aware Spring ApplicationContext.
+
+4	
+session
+
+This scopes a bean definition to an HTTP session. Only valid in the context of a web-aware Spring ApplicationContext.
+5	
+global-session
+
+This scopes a bean definition to a global HTTP session. Only valid in the context of a web-aware Spring ApplicationContext.
+
+why database normalization is forms
+Normalization is the process of minimizing redundancy from a relation or set of relations.
+ Redundancy in relation may cause insertion, deletion and updation anomalies.
+ So, it helps to minimize the redundancy in relations. Normal forms are used to eliminate or reduce redundancy in database
+ tables
+
+
+aggregate function in sql
+An aggregate function performs a calculation on a set of values, and returns a single value.
+ Except for COUNT(*) , aggregate functions ignore null values.
+ Aggregate functions are often used with the GROUP BY clause of the SELECT statement.
+
+
+insql while returning data sequence of cluases
+
+Six Operations to Order: SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY. By using examples, 
+we will explain the execution order of the six most common operations or pieces in an SQL query. 
+Because the database executes query components in a specific order, it's helpful for the developer to know this order.
+
+what is pl sql teaching
+
+PL/SQL is a block-structured language. 
+The written programs in PL/SQL are logical blocks that can contain any number of nested sub-blocks.
+ PL/SQL ensures logical processing of SQL statements by enhancing the data's safety, portability, and robustness.
+
+
+syntax and clustering function in sql
+
+You can access clustered tables with SQL statements just as you can ... 
+to sort the rows of the cluster on this column before applying the hash function.
+
+need of cursors in sql
+
+The major function of a cursor is to retrieve data, one row at a time, from a result set,
+ unlike the SQL commands which operate on all the rows in the result set at one time.
+ Cursors are used when the user needs to update records in a singleton fashion or in a row by row manner, 
+in a database table
+
+What is transaction management in SQL?
+Image result for transaction management in sql
+It is a set of work (T-SQL statements) that are executed together such as a single unit in a 
+specific logical order as a single unit. If statements are executed successfully then the transaction 
+is complete and then it is committed that saves the data in the database permanently.
+
+some of the sql  object qualilable
+Some database objects are made up of parts that you can or must name, such as the columns in a table or view, index and table partitions and subpartitions, integrity constraints on a table, and objects that are stored within a package, including procedures and stored functions. This section provides:
+
+
